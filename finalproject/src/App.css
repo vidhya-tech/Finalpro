@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.furniture_section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.furniture_section .box {
+  width: 30%; /* Adjust as needed to leave space between images */
+  background-color: #f7fafa;
+  padding: 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.furniture_section .box:nth-child(3n) {
+  margin-right: 0; /* No right margin for every third box */
+}
+
+.furniture_section .box .img-box {
+  height: 275px;
+  padding: 25px;
+}
+
+.furniture_section .box .img-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.furniture_section .box .detail-box {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.furniture_section .box .detail-box h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.furniture_section .box .detail-box .price_box {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.furniture_section .box .detail-box .price_box .price_heading {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.furniture_section .box .detail-box .price_box a {
+  color: #6bb7be;
+  cursor: pointer; /* Add pointer cursor for better UX */
+}
+
+.furniture_section .box:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.furniture_section .box:hover .img-box img {
+  transform: scale(1.1);
+}
+
+.furniture_section .box:hover .detail-box {
+  margin-top: 15px; /* Adjust as needed */
 }
