@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,300;1,200;1,400;1,600;1,700&family=Raleway:ital@1&display=swap');
+
+
+
 body{
   overflow-x: hidden;
 }
@@ -69,8 +73,31 @@ body{
 .furniture_section .box:hover .detail-box {
   margin-top: 15px; /* Adjust as needed */
 }
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,300;1,200;1,400;1,600;1,700&family=Raleway:ital@1&display=swap');
 
+
+.box.product {
+  position: relative;
+}
+.add-to-cart-link{
+  color: #000000;
+}
+.price_box a {
+  color: #007bff; 
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.price_box a:hover {
+  text-decoration: underline;
+}
+
+
+.product-added-message {
+  color: green;
+}
 
 body {
   padding: 0;
@@ -127,13 +154,13 @@ body {
   margin-left: 1100px;
   margin-top: -50px;
 }
-@media screen and (min-width: 1560px) {
+/* @media screen and (min-width: 1560px) {
   .navbarssection {
     font-size: 10px;
-    margin-left: -50px; /* Adjust as needed */
+    margin-left: -50px; 
   }
   .quote_btn-container {
-    margin-left: 1200px; /* Adjust as needed */
+    margin-left: 1200px;
   }
 }
 
@@ -147,7 +174,7 @@ body {
   
 
  
-}
+} */
 .resnav{
   display: none;
 }

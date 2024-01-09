@@ -42,11 +42,11 @@ const FurnitureSection = ({ addToCart }) => {
             <h5>{product.name}</h5>
             <div className='price_box'>
               <div className='price_heading'>${product.price.toFixed(2)}</div>
-              <a onClick={() => handleAddToCart(product)}>Add to Cart</a>
+              <a className="add-to-cart-link" onClick={() => handleAddToCart(product)}>Add to Cart</a>
             </div>
           </div>
           {addedProduct && addedProduct.id === product.id && (
-            <p style={{ color: 'green' }}>Product added to the cart!</p>
+            <p className="product-added-message">Product added to the cart!</p>
           )}
         </div>
       ))}
