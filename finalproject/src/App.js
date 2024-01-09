@@ -1,32 +1,34 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import FurnitureSection from './FurnitureSection';
-import Cart from './Cart';
-import './App.css'
+import '@fortawesome/fontawesome-free/css/all.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Mynav from './Mynav';
+import Header from './Header'
 
-function App() {
+
+
+
+
+
+
+
+
+
+
+const App = () => {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Furniture Section</Link>
-            </li>
-            <li>
-              <Link to="/cart">Cart</Link>
-            </li>
-          </ul>
-        </nav>
+    <>
+    
+      
+      <Mynav/>
+      <Header/>
+     
+      
 
-        <Routes>
-          <Route path="/" element={<FurnitureSection />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </div>
-    </Router>
+    
+     
+     
+    </>
   );
-}
+};
 
 export default App;
