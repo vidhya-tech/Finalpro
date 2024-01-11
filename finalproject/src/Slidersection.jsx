@@ -16,7 +16,7 @@ const SliderSection = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-5">
-                <div className="detail-box">
+                <div className="detail-box-slider">
                   <h1>
                     For All Your <br />
                     Furniture Needs
@@ -36,7 +36,7 @@ const SliderSection = () => {
               </div>
               <div className="col-md-7">
                 <div className="img-box">
-                  <img src={sliderImage2} alt="SliderImage2" />
+                  <img src={sliderImage2} alt="SliderImage" />
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ const SliderSection = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-5">
-                <div className="detail-box">
+                <div className="detail-box-slider">
                   <h1>
                     For All Your <br />
                     Furniture Needs
@@ -82,7 +82,7 @@ const SliderSection = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-5">
-                <div className="detail-box">
+                <div className="detail-box-slider">
                   <h1>
                     For All Your <br />
                     Furniture Needs
