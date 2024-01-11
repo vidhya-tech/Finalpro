@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import sliderImage from './image/slider-img.png';
 import sliderImage2 from './image/slider-img.png';
 import sliderImage3 from './image/slider-img.png';
+import { Link } from 'react-router-dom';
 
 const SliderSection = () => {
   return (
@@ -24,18 +25,18 @@ const SliderSection = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.
                   </p>
                   <div className="btn-box">
-                    <a href="" className="btn1">
+                    <Link href="" className="btn1">
                       Contact Us
-                    </a>
-                    <a href="" className="btn2">
+                    </Link>
+                    <Link href="" className="btn2">
                       About Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col-md-7">
                 <div className="img-box">
-                  <img src={sliderImage2} alt="Slider Image" />
+                  <img src={sliderImage2} alt="SliderImage2" />
                 </div>
               </div>
             </div>
@@ -57,18 +58,18 @@ const SliderSection = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.
                   </p>
                   <div className="btn-box">
-                    <a href="" className="btn1">
+                    <Link href="" className="btn1">
                       Contact Us
-                    </a>
-                    <a href="" className="btn2">
+                    </Link>
+                    <Link href="" className="btn2">
                       About Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col-md-7">
                 <div className="img-box">
-                  <img src={sliderImage3} alt="Slider Image" />
+                  <img src={sliderImage3} alt="SliderImage3" />
                 </div>
               </div>
             </div>
@@ -90,18 +91,18 @@ const SliderSection = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.
                   </p>
                   <div className="btn-box">
-                    <a href="" className="btn1">
+                    <Link href="" className="btn1">
                       Contact Us
-                    </a>
-                    <a href="" className="btn2">
+                    </Link>
+                    <Link href="" className="btn2">
                       About Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col-md-7">
                 <div className="img-box">
-                  <img src={sliderImage} alt="Slider Image" />
+                  <img src={sliderImage} alt="SliderImage" />
                 </div>
               </div>
             </div>

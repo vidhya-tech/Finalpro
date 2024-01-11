@@ -7,6 +7,7 @@ import f3 from './image/f3.png';
 import f4 from './image/f4.png';
 import f5 from './image/f5.png';
 import f6 from './image/f6.png';
+import { Link } from 'react-router-dom';
 
 
 const FurnitureSection = ({ addToCart }) => {
@@ -42,7 +43,7 @@ const FurnitureSection = ({ addToCart }) => {
             <h5>{product.name}</h5>
             <div className='price_box'>
               <div className='price_heading'>${product.price.toFixed(2)}</div>
-              <a className="add-to-cart-link" onClick={() => handleAddToCart(product)}>Add to Cart</a>
+              <Link className="add-to-cart-link" onClick={() => handleAddToCart(product)}>Add to Cart</Link>
             </div>
           </div>
           {addedProduct && addedProduct.id === product.id && (
