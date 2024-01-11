@@ -16,31 +16,31 @@ body{
 }
 
 .furniture_section .box {
-  width: 30%; /* Adjust as needed to leave space between images */
+  width: 30%; 
   background-color: #f7fafa;
   padding: 25px;
   border-radius: 5px;
   transition: 0.5s;
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-bottom: 20px; 
+  box-sizing: border-box; 
 }
 
 .furniture_section .box:nth-child(3n) {
-  margin-right: 0; /* No right margin for every third box */
+  margin-right: 0; 
 }
 
-.furniture_section .box .img-box {
+.furniture_section .box .image-box-fur {
   height: 275px;
   padding: 25px;
 }
 
-.furniture_section .box .img-box img {
+.furniture_section .box .image-box-fur img {
   max-width: 100%;
   max-height: 100%;
 }
 
 .furniture_section .box .detail-box {
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; 
 }
 
 .furniture_section .box .detail-box h5 {
@@ -60,7 +60,7 @@ body{
 
 .furniture_section .box .detail-box .price_box a {
   color: #6bb7be;
-  cursor: pointer; /* Add pointer cursor for better UX */
+  cursor: pointer; 
 }
 
 .furniture_section .box:hover {
@@ -69,7 +69,7 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.furniture_section .box:hover .img-box img {
+.furniture_section .box:hover .image-box-fur  img {
   transform: scale(1.1);
 }
 
@@ -80,14 +80,13 @@ body{
   position: relative;
   padding-left: 20px;
 }
-.img-box{
+.image-box-fur{
   width: 80%;
 }
 .add-to-cart-link{
   color: #000000;
 }
 .price_box a {
-  /* color: #007bff;  */
   font-weight: bold;
   text-align: right;
   text-decoration: none;
@@ -103,6 +102,71 @@ body{
 .product-added-message {
   color: green;
 }
+@media screen and (max-width: 480px) {
+  .furniture_section {
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .furniture_section .box {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .furniture_section .box .image-box-fur {
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Align horizontally in the center */
+    align-items: center; /* Align vertically in the center */
+  }
+
+  .furniture_section .box .detail-box {
+    margin-top: 10px;
+  }
+
+  .furniture_section .box .detail-box h5 {
+    font-size: 16px;
+  }
+
+  .furniture_section .box .detail-box .price_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .box.product {
+    padding-left: 10px;
+  }
+
+  .image-box-fur {
+    width: 100%;
+  }
+
+  .add-to-cart-link {
+    margin-top: 10px;
+  }
+
+  .price_box a {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .furniture_section .box:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .furniture_section .box:hover .image-box-fur img {
+    transform: none;
+  }
+
+  .furniture_section .box:hover .detail-box {
+    margin-top: 0;
+  }
+}
+
+
 
 body {
   padding: 0;
@@ -172,7 +236,17 @@ body {
   }
   
 }
+@media screen and (min-width: 1277px) {
+  
 
+  .navbarssection {
+    margin-right: 4500px; /* Adjust the margin as needed */
+  }
+
+  .quote_btn-container {
+    margin-right: 2500px; /* Adjust the margin as needed */
+  }
+}
 
 
 
@@ -190,7 +264,6 @@ body {
   position: relative;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 100px;
 }
 
 h1,
@@ -379,7 +452,7 @@ h1 {
 }
 
 .blog_section .box .img-box img {
-  width: 125%;
+  width: 100%;
 }
 
 .blog_section .box .detail-box {

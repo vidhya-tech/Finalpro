@@ -9,7 +9,6 @@ import f5 from './image/f5.png';
 import f6 from './image/f6.png';
 import { Link } from 'react-router-dom';
 
-
 const FurnitureSection = ({ addToCart }) => {
   const [addedProduct, setAddedProduct] = useState(null);
 
@@ -36,7 +35,7 @@ const FurnitureSection = ({ addToCart }) => {
     <div className="furniture_section">
       {products.map((product) => (
         <div className='box product' key={product.id}>
-          <div className='img-box'>
+          <div className='image-box-fur'>
             <img src={product.image} alt={product.name} />
           </div>
           <div className='detail-box'>
