@@ -102,6 +102,43 @@ body{
 .product-added-message {
   color: green;
 }
+@media screen and (max-width: 800px) {
+  .furniture_section {
+    margin-top: 150px; /* Adjust as needed for spacing on smaller screens */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .furniture_section .box {
+    width: 100%; /* Full width for each box on smaller screens */
+    margin-right: 0; /* Reset margin for each box on smaller screens */
+  }
+
+  .furniture_section .box .image-box-fur {
+    height: auto; /* Allow image height to adjust based on content */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .furniture_section .box .detail-box {
+    margin-top: 15px; /* Adjust as needed for spacing on smaller screens */
+  }
+
+  .image-box-fur {
+    width: 100%; /* Full width for image box on smaller screens */
+  }
+
+  .price_box a {
+    text-align: left; /* Adjust text alignment for smaller screens */
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width:980px){
+  .image-box-fur{
+    width: 200px;
+  }
+
+}
 @media screen and (max-width: 480px) {
   .furniture_section {
     margin-top: 100px;
@@ -247,7 +284,29 @@ body {
     margin-right: 2500px; /* Adjust the margin as needed */
   }
 }
+@media screen and (min-width: 981px) and (max-width: 1290px) {
+  /* Add your styles here for the specified screen width range */
+  .container-navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .navbarssection{
+    margin-left: -10px;
+  }
+  
+  .nav_search-btn {
+    margin-left: 10px; /* Adjust margin for search button */
+  }
 
+  .heading {
+    font-size: 24px; /* Adjust heading font size */
+  }
+  .quote_btn-container {
+    margin-left: 700px;
+    margin-bottom: 20px;
+  }
+  
+
+}
 
 
 /* end navbar section */

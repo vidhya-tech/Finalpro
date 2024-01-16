@@ -9,6 +9,8 @@ import Footersection from './Footersection';
 import Yearsection from './Yearsection';
 import SliderSection from './Slidersection';
 import Cart from './Cart';
+import { CiShoppingCart } from "react-icons/ci";
+
 
 const Header = () => {
   return (
@@ -24,7 +26,7 @@ const Header = () => {
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contactus</Link></li>
             <li>
-              <Link to="/cart">Cart</Link>
+              <Link to="/cart"><CiShoppingCart  size="30px" /></Link>
             </li>
           </ul>
 
