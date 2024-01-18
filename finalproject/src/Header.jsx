@@ -10,6 +10,7 @@ import Yearsection from './Yearsection';
 import SliderSection from './Slidersection';
 import Cart from './Cart';
 import { CiShoppingCart } from "react-icons/ci";
+import Login from './Login';
 
 
 const Header = () => {
@@ -79,7 +80,9 @@ const Header = () => {
           }
         />
          <Route path="/cart" element={<Cart />} />
+         <Route path="/login" element={<Login/>} />
       </Routes>
+      
      
     </Router>
   );
