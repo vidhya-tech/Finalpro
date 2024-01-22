@@ -264,24 +264,31 @@ body {
 .resnav{
   display: none;
 }
-@media screen and (max-width: 958px) {
-  .resnav {
-    display: block;
-  }
+@media screen and (max-width: 990px) {
+  
   .container-navbar{
     display: none;
+  }
+  .resnav{
+   display: block;
   }
   
 }
 @media screen and (min-width: 1277px) {
-  
-
-  .navbarssection {
-    margin-right: 4500px; /* Adjust the margin as needed */
+   .navbarssection {
+    margin-right: 4500px; 
   }
 
   .quote_btn-container {
     margin-right: 2500px; /* Adjust the margin as needed */
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1014px){
+  .shopcart{
+    margin-left: -50px;
+  }
+  .Login{
+           margin-left: -5px;
   }
 }
 @media screen and (min-width: 981px) and (max-width: 1290px) {
@@ -1133,9 +1140,7 @@ h1 {
 
 }
 @media (max-width: 576px) {
- 
-
-  .info_section .info_links .info_links_menu {
+ .info_section .info_links .info_links_menu {
     margin-bottom: 35px;
   }
 
