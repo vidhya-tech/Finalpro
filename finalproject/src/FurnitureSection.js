@@ -8,7 +8,7 @@ import f4 from './image/f4.png';
 import f5 from './image/f5.png';
 import f6 from './image/f6.png';
 import { Link } from 'react-router-dom';
-
+import './Furnituresection.css'
 const FurnitureSection = ({ addToCart }) => {
   const [addedProduct, setAddedProduct] = useState(null);
 

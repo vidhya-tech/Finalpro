@@ -11,39 +11,36 @@ import SliderSection from './Slidersection';
 import Cart from './Cart';
 import { CiShoppingCart } from "react-icons/ci";
 import Login from './Login';
-
+import { IoIosSearch } from "react-icons/io";
+import './App.css'
 
 const Header = () => {
   return (
     <Router>
-      <div className="container-navbar">
-        <span className='heading'>Edgecut</span>
-
-        <nav className='navbar'>
-          <ul className='navbarssection'>
+       <div>
+      <header>
+          <span className='logo'>
+            Edgecut
+          </span>
+        <nav>
+          <ul className='navlinks'>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/furniture">Furnitures</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/contact">Contactus</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li> {/* Corrected spelling */}
             <li>
               <Link to="/cart" className='shopcart'><CiShoppingCart  size="30px" /></Link>
             </li>
           </ul>
-
-          <div className="quote_btn-container">
-            <Link to="/Login">
-              <span className='login'>Login</span>
-              <i className="fa fa-user" aria-hidden="true"></i>
-            </Link>
-            <form className="form-inline">
-              <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                <i className="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
         </nav>
-      </div>
+        {/* Moved inside the nav element */}
+        <ul className='navlinks'>
+          <li className='login'><Link to='/login'>LOGIN</Link></li> 
+          <li><IoIosSearch  className='searchicon' size="20px" /></li>
+        </ul>
+      </header>
+    </div>
 
       <Routes>
         <Route

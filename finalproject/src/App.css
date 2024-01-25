@@ -6,202 +6,6 @@ body{
   overflow-x: hidden;
 }
 
-.furniture_section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 300px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.furniture_section .box {
-  width: 30%; 
-  background-color: #f7fafa;
-  padding: 25px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin-bottom: 20px; 
-  box-sizing: border-box; 
-}
-
-.furniture_section .box:nth-child(3n) {
-  margin-right: 0; 
-}
-
-.furniture_section .box .image-box-fur {
-  height: 275px;
-  padding: 25px;
-}
-
-.furniture_section .box .image-box-fur img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.furniture_section .box .detail-box {
-  margin-top: 20px; 
-}
-
-.furniture_section .box .detail-box h5 {
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.furniture_section .box .detail-box .price_box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.furniture_section .box .detail-box .price_box .price_heading {
-  margin-bottom: 0;
-}
-
-.furniture_section .box .detail-box .price_box a {
-  color: #6bb7be;
-  cursor: pointer; 
-}
-
-.furniture_section .box:hover {
-  background-color: #e0f7fa;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.furniture_section .box:hover .image-box-fur  img {
-  transform: scale(1.1);
-}
-
-.furniture_section .box:hover .detail-box {
-  margin-top: 15px; /* Adjust as needed */
-}
-.box.product {
-  position: relative;
-  padding-left: 20px;
-}
-.image-box-fur{
-  width: 80%;
-}
-.add-to-cart-link{
-  color: #000000;
-}
-.price_box a {
-  font-weight: bold;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.price_box a:hover {
-  text-decoration: underline;
-}
-
-
-.product-added-message {
-  color: green;
-}
-@media screen and (max-width: 800px) {
-  .furniture_section {
-    margin-top: 150px; /* Adjust as needed for spacing on smaller screens */
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .furniture_section .box {
-    width: 100%; /* Full width for each box on smaller screens */
-    margin-right: 0; /* Reset margin for each box on smaller screens */
-  }
-
-  .furniture_section .box .image-box-fur {
-    height: auto; /* Allow image height to adjust based on content */
-    padding: 15px; /* Adjust padding for smaller screens */
-  }
-
-  .furniture_section .box .detail-box {
-    margin-top: 15px; /* Adjust as needed for spacing on smaller screens */
-  }
-
-  .image-box-fur {
-    width: 100%; /* Full width for image box on smaller screens */
-  }
-
-  .price_box a {
-    text-align: left; /* Adjust text alignment for smaller screens */
-    margin-top: 15px; /* Adjust margin for smaller screens */
-  }
-}
-
-@media screen and (max-width:980px){
-  .image-box-fur{
-    width: 200px;
-  }
-
-}
-@media screen and (max-width: 480px) {
-  .furniture_section {
-    margin-top: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .furniture_section .box {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .furniture_section .box .image-box-fur {
-    height: 150px;
-    padding: 15px;
-    display: flex;
-    justify-content: center; /* Align horizontally in the center */
-    align-items: center; /* Align vertically in the center */
-  }
-
-  .furniture_section .box .detail-box {
-    margin-top: 10px;
-  }
-
-  .furniture_section .box .detail-box h5 {
-    font-size: 16px;
-  }
-
-  .furniture_section .box .detail-box .price_box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .box.product {
-    padding-left: 10px;
-  }
-
-  .image-box-fur {
-    width: 100%;
-  }
-
-  .add-to-cart-link {
-    margin-top: 10px;
-  }
-
-  .price_box a {
-    text-align: left;
-    margin-top: 10px;
-  }
-
-  .furniture_section .box:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  .furniture_section .box:hover .image-box-fur img {
-    transform: none;
-  }
-
-  .furniture_section .box:hover .detail-box {
-    margin-top: 0;
-  }
-}
 
 
 
@@ -213,106 +17,54 @@ body {
 
 }
 
-.heading {
-  margin-left: 50px;
-  font-weight: bold;
+
+/* navbar section */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+.logo{
+  font-weight: bolder;
   text-transform: uppercase;
   font-size: x-large;
-  margin-top: 0;
-
 }
-/* navbar section */
-.container-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-.navbar {
-  display: flex;
-  
-}
-.navbarssection {
-  
-  display: flex;
-  align-items: center;
-  margin-left: 200px;
-  list-style: none;
-  
-}
-.navbarssection a {
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+li,a{
+  font-weight: 500;
+  font-size: 16px;
   color: black;
-  margin-left: 50px;
-  text-transform: uppercase;
-}
-.quote_btn-container a {
-  color: #151515;
-  margin-right: 25px;
-  text-transform: uppercase;
   text-decoration: none;
-  
-}
-.quote_btn-container {
-  display: flex;
-  align-items: center;
-  margin-left: 1100px;
-  margin-top: -50px;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  
+}
+.navlinks{
+  list-style: none;
+}
+.navlinks li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+.navlinks li a{
+  transform: all 0.3s ease 0s;
+}
+.navlinks li :hover
+{
+  color: black;
+}
 .resnav{
   display: none;
 }
-@media screen and (max-width: 990px) {
-  
-  .container-navbar{
-    display: none;
-  }
+@media screen and (max-width: 539px) {
   .resnav{
-   display: block;
+ display: block;
   }
-  
-}
-@media screen and (min-width: 1277px) {
-   .navbarssection {
-    margin-right: 4500px; 
-  }
-
-  .quote_btn-container {
-    margin-right: 2500px; /* Adjust the margin as needed */
-  }
-}
-@media screen and (min-width: 990px) and (max-width: 1014px){
-  .shopcart{
-    margin-left: -50px;
-  }
-  .Login{
-           margin-left: -5px;
-  }
-}
-@media screen and (min-width: 981px) and (max-width: 1290px) {
-  /* Add your styles here for the specified screen width range */
-  .container-navbar {
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-  .navbarssection{
-    margin-left: -10px;
-  }
-  
-  .nav_search-btn {
-    margin-left: 10px; /* Adjust margin for search button */
-  }
-
-  .heading {
-    font-size: 24px; /* Adjust heading font size */
-  }
-  .quote_btn-container {
-    margin-left: 700px;
-    margin-bottom: 20px;
-  }
-  
-
 }
 
 
@@ -338,12 +90,6 @@ p,
 .btn2 {
   padding-left: 40px;
   padding-bottom: 5px;
-}
-
-h1 {
-  font-weight: bold;
-  margin-top: 100px;
-  text-transform: uppercase;
 }
 
 .slider_section::before {
