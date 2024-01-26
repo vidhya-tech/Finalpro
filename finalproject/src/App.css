@@ -61,9 +61,15 @@ header{
 .resnav{
   display: none;
 }
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 980px) {
   .resnav{
- display: block;
+    display: block;
+  }
+  .navlinks{
+    display: none;
+  }
+  .logo{
+    display: none;
   }
 }
 
