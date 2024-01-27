@@ -1,0 +1,79 @@
+.loginpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: rgb(34, 193, 195);
+ background: linear-gradient(0deg, rgba(3,230,230,1) 0%, rgba(253,166,45,1) 100%);;
+}
+
+.loginheading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: or; /* Adjust the color as needed */
+  }
+.loginform{
+    justify-content: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.username ,.password{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.username input[type='text'],
+.password input[type='password']{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.submit{
+    width: 100%;
+    padding:10px;
+    border: none;
+    border-radius:3px;
+    background-color:  #f89646;
+    color: #ccc;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color:#6bb7be ;
+    
+  }
+  /* Login.css */
+
+/* Style the error message */
+.error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  /* Login.css */
+
+/* Style the username and password labels when there's an error */
+.username.error,
+.password.error {
+  color: red;
+}
+
+/* Style the input fields when there's an error */
+.username.error input[type='text'],
+.password.error input[type='password'] {
+  border-color: red;
+}
+
+  
+  /* Style the submit button when there's an error */
+  .submit.error {
+    border-color: red;
+    color: red;
+  }
+  
