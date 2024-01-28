@@ -2,6 +2,7 @@ import React from 'react';
 import b1 from './image/b1.jpg';
 import b2 from './image/b2.jpg';
 import b3 from './image/b3.jpg';
+import './Blog.css'
 
 function Blog() {
   return (

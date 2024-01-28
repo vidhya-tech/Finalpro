@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import client1 from './image/client.jpg';
 import client2 from './image/client.jpg';
 import client3 from './image/client.jpg';
+import './Clientsection.css'
 
 const ClientSection = () => {
   const [index, setIndex] = useState(0);

@@ -5,6 +5,7 @@ import sliderImage from './image/slider-img.png';
 import sliderImage2 from './image/slider-img.png';
 import sliderImage3 from './image/slider-img.png';
 import { Link } from 'react-router-dom';
+import './Slidersection.css'
 
 const SliderSection = () => {
   return (

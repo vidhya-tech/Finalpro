@@ -12,7 +12,9 @@ import Cart from './Cart';
 import { CiShoppingCart } from "react-icons/ci";
 import Login from './Login';
 import { IoIosSearch } from "react-icons/io";
-import './App.css'
+
+
+import './Header.css'
 
 const Header = () => {
   return (
@@ -28,15 +30,16 @@ const Header = () => {
             <li><Link to="/furniture">Furnitures</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li> {/* Corrected spelling */}
+            <li><Link to="/contact">Contact Us</Link></li>
             <li>
               <Link to="/cart" className='shopcart'><CiShoppingCart  size="30px" /></Link>
             </li>
           </ul>
         </nav>
-        {/* Moved inside the nav element */}
+    
         <ul className='navlinks'>
-          <li className='login'><Link to='/login'>LOGIN</Link></li> 
+          <li className='login'><Link to='/login'>LOGIN</Link>  <i class="fa-solid fa-user"></i></li> 
+         
           <li><IoIosSearch  className='searchicon' size="20px" /></li>
         </ul>
       </header>

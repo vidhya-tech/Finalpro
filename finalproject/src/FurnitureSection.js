@@ -33,6 +33,14 @@ const FurnitureSection = ({ addToCart }) => {
 
   return (
     <div className="furniture_section">
+     <div class="headingfurniture_container">
+        <h2>
+          Our Furniture
+        </h2>
+        <p>
+          which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an
+        </p>
+      </div>
       {products.map((product) => (
         <div className='box product' key={product.id}>
           <div className='image-box-fur'>

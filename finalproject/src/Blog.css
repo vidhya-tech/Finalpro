@@ -1,0 +1,68 @@
+/* Blog section */
+.blog_section {
+    min-height: 300px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  .img-box:hover {
+    box-shadow: 20px 20px 20px 20px rgba(241, 238, 238, 0.2);
+  }
+  
+  .blog_section h2 {
+    text-align: center;
+  }
+  
+  .blog_section .box {
+    margin-top: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog_section .box .img-box {
+    position: relative;
+  }
+  
+  .blog_section .box .img-box img {
+    width: 100%;
+  }
+  
+  .blog_section .box .detail-box {
+    padding: 25px;
+  }
+  
+  .blog_section .box .detail-box h5 {
+    font-weight: bold;
+  }
+  
+  .blog_section .box .detail-box p {
+    font-size: 15px;
+    color: #444;
+    margin-right: 40px;
+  }
+  
+  .blog_section .box .detail-box a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #6bb7be;
+    color: #ffffff;
+    border-radius: 0;
+    border: 1px solid #6bb7be;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  
+  .blog_section .box .detail-box a:hover {
+    background-color: transparent;
+    color: #6bb7be;
+  }
+  .blog_section .box:hover {
+    transform: translateY(-5px); /* Add a slight upward lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover */
+  }
+  
+  
+  
+  /* End blog section */

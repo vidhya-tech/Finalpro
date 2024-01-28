@@ -12,6 +12,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
+import './Footersection.css'
 const Footersection = () => {
   return (
     <>
@@ -89,7 +90,7 @@ const Footersection = () => {
                   <h4>SIGN UP TO OUR NEWSLETTER</h4>
                   <Form>
                     <Form.Group>
-                      <Form.Control type="text" placeholder="Enter Your Email" />
+                      <Form.Control className='footerinput' type="text" placeholder="Enter Your Email" />
                     </Form.Group>
                     <Button type="submit">Subscribe</Button>
                   </Form>

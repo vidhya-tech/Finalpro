@@ -1,0 +1,189 @@
+/*  client section */
+.heading_client h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   }
+  
+  .client_section .box {
+    display: flex;
+    align-items: center;
+    margin: 45px;
+    padding: 35px 25px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .client_section .box .img-box {
+    border-radius: 100%;
+    border: 10px solid #6bb7be;
+    /* margin-right: 25px; */
+    min-width: 175px;
+    max-width: 175px;
+    overflow: hidden;
+  }
+  
+  .client_section .box .img-box img {
+    width: 100%;
+  }
+  
+  .client_section .box .detail-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .client_section .box .detail-box .name {
+    text-align: center;
+  }
+  
+  .client_section .box .detail-box .name img {
+    width: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .client_section .box .detail-box .name h6 {
+    color: #6bb7be;
+    font-size: 20px;
+  }
+  .client_section .custom-carousel-prev-icon{
+   left: 600%;
+  }
+  .client_section .custom-carousel-next-icon{
+    right: 1000px;
+  }
+  .client_section .custom-carousel-prev-icon,
+  .client_section .custom-carousel-next-icon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    background-color: #6bb7be;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    margin-top: -50px;
+  }
+  
+  .client_section .custom-carousel-prev-icon::before,
+  .client_section .custom-carousel-next-icon::before {
+    content: '\2190'; 
+  }
+  
+  .client_section .custom-carousel-next-icon::before {
+    content: '\2192'; /* Unicode arrow right character */
+  }
+  
+  .client_section .custom-carousel-prev-icon:hover,
+  .client_section .custom-carousel-next-icon:hover {
+    background-color: #000000;
+  }
+  @media (max-width: 500px) {
+    .heading_client h2 {
+      text-align: center;
+      
+    }
+  }
+  @media (max-width: 768px) {
+    .client_section .custom-carousel-prev-icon,
+    .client_section .custom-carousel-next-icon {
+      top:500px;
+      font-size: 16px;
+     }
+     .heading_client h2{
+      display: flex;
+      align-items: center;
+      margin-right: 400px;
+     }
+  }
+  @media (max-width: 768px) {
+    .client_section .custom-carousel-next-icon{
+      right: 250px;
+    }
+  }
+  @media (max-width: 768px) {
+    .client_section .custom-carousel-next-icon{
+      right: 250px;
+    }
+  }
+  @media (max-width: 768px) {
+    .client_section .custom-carousel-prev-icon{
+    left: 280px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .client_section .custom-carousel-prev-icon,
+    .client_section .custom-carousel-next-icon {
+      top: 380px; 
+      font-size: 18px; 
+    }
+  
+    .client_section .custom-carousel-next-icon {
+      right: 300px;
+    }
+  
+    .client_section .custom-carousel-prev-icon {
+      left: 300px; 
+    }
+  }
+  @media (min-width: 1197px) {
+    .client_section .custom-carousel-prev-icon,
+    .client_section .custom-carousel-next-icon {
+      top: 380px; 
+      font-size: 18px; 
+    }
+  
+    .client_section .custom-carousel-next-icon {
+      right: 600px;
+    }
+  
+    .client_section .custom-carousel-prev-icon {
+      left: 600px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading_client {
+      margin-left: 300px;
+    }
+  
+    .client_section .box {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .client_section .box {
+      flex-direction: column;
+      text-align: center;
+      margin: 45px 15px;
+    }
+  
+    .client_section .box .detail-box {
+      align-items: center;
+    }
+  
+    .client_section .box .img-box {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (max-width: 357px) {
+    .client_section .heading_client h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 500px;
+    }
+  }
+  
+  
