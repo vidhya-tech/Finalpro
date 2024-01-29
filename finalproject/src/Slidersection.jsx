@@ -5,15 +5,14 @@ import sliderImage from './image/slider-img.png';
 import sliderImage2 from './image/slider-img.png';
 import sliderImage3 from './image/slider-img.png';
 import { Link } from 'react-router-dom';
-import './Slidersection.css'
+import './Slidersection.css';
 
 const SliderSection = () => {
   return (
     <section className="slider_section long_section">
-      <Carousel interval={2000} >
+      <Carousel interval={2000}>
         
         <Carousel.Item>
-          
           <div className="container">
             <div className="row">
               <div className="col-md-5">
@@ -26,10 +25,10 @@ const SliderSection = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.
                   </p>
                   <div className="btn-box">
-                    <Link href="" className="btn1">
+                    <Link to="" className="btn1">
                       Contact Us
                     </Link>
-                    <Link href="" className="btn2">
+                    <Link to="" className="btn2">
                       About Us
                     </Link>
                   </div>
@@ -59,10 +58,10 @@ const SliderSection = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.
                   </p>
                   <div className="btn-box">
-                    <Link href="" className="btn1">
+                    <Link to="" className="btn1">
                       Contact Us
                     </Link>
-                    <Link href="" className="btn2">
+                    <Link to="" className="btn2">
                       About Us
                     </Link>
                   </div>
@@ -92,10 +91,10 @@ const SliderSection = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.
                   </p>
                   <div className="btn-box">
-                    <Link href="" className="btn1">
+                    <Link to="" className="btn1">
                       Contact Us
                     </Link>
-                    <Link href="" className="btn2">
+                    <Link to="" className="btn2">
                       About Us
                     </Link>
                   </div>

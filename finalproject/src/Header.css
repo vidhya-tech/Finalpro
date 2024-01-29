@@ -26,10 +26,12 @@
   }
   .navlinks{
     list-style: none;
+   
   }
   .navlinks li{
     display: inline-block;
     padding: 0px 20px;
+    text-transform: uppercase;
   }
   .navlinks li a{
     transform: all 0.3s ease 0s;
@@ -52,6 +54,7 @@
       display: none;
     }
   }
+  
   
   
   /* end navbar section */

@@ -6,6 +6,12 @@ import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FurnitureSection from './FurnitureSection';
 import Aboutsection from './Aboutsection';
 import Blog from './Blog';
+import Contactus from './Contactus';
+import ClientSection from './ClientSection';
+import Footersection from './Footersection';
+import Yearsection from './Yearsection';
+import SliderSection from './Slidersection';
+
 
 function Mynav() {
   return (
@@ -27,12 +33,11 @@ function Mynav() {
         </Container>
       </Navbar>
 
-      <Routes>
       
+      <Routes>
+        
          
-        <Route path="/furniture" element={<FurnitureSection/>} />
-        <Route path="/about" element={<Aboutsection/>} />
-        <Route path="/blog" element={<Blog/>} />
+        
         
       </Routes>
     </Router>

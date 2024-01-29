@@ -31,7 +31,8 @@
   
   }
   .detail-box-slider{
-    margin-top: 150px;
+  
+    margin-left: 70px;
   }
   
   .row {
@@ -88,56 +89,31 @@
     margin-top: 300px;
     display: grid;
   }
-  @media screen and (max-width: 375px) {
-    .slider_section .detail-box-slider .btn-box {
-      flex-direction: column;
-      margin: 0;
-      margin-top: 10px; /* Adjust as needed */
-      margin-left: 0;
-    }
   
-    .slider_section .detail-box-slider .btn-box a {
-      width: auto;
-    }
-  
-    .slider_section .detail-box-slider .btn-box .btn1,
-    .slider_section .detail-box-slider .btn-box .btn2 {
-      width: 100%;
-      margin-bottom: 5px; /* Adjust as needed */
-    }
-  }
-  @media screen and (max-width: 768px) {
-  
-
-    .slider_section {
+@media screen and (max-width: 768px) {
+  .slider_section {
       margin-left: 20px;
       margin-right: 20px;
     }
-  
-    h1 {
-      margin-top: 50px;
-    }
-  
-    .heading_container {
-      margin-top: 150px;
-    }
-  
-    .slider_section {
-      padding-top: 45px;
-      padding-bottom: 75px;
-    }
-  
-    .slider_section .detail_box {
-      text-align: center;
-      padding-left: 0;
-    }
-  
-    .slider_section .img-box img {
-      margin-top: 45px;
-      width: 100%;
+    
+ 
+  .slider_section .img-box img {
+      margin-left: 50px;
+      width: 20%;
     }
   }
+ 
+  @media screen and (max-width: 998px) {
+    .slider_section .detail-box-slider{
+      margin-top: 50px;
+     }
+     .slider_section .detail-box-slider .btn-box {
+      width: 400px;
+     }
   
+    
+  }
+
   @media screen and (max-width: 1564px) {
     .slider_section .img-box img {
       margin-top: 50px;
@@ -148,6 +124,35 @@
       margin-top: 40px;
     }
   }
+
+  @media screen and (max-width: 375px) {
+  .slider_section {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .slider_section .detail-box-slider .btn-box {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    margin-left: 0;
+  }
+
+  .slider_section .detail-box-slider .btn-box a {
+    width: auto;
+  }
+
+  .slider_section .detail-box-slider .btn-box .btn1,
+  .slider_section .detail-box-slider .btn-box .btn2 {
+    width: 100%;
+    margin-bottom: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .heading_container {
+    margin-top: 150px; /* Adjust margin for smaller screens */
+  }
+}
+
   
   /* slider section ends */
   
