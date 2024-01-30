@@ -14,7 +14,7 @@
     border-radius: 5px;
     transition: 0.5s;
     margin-bottom: 20px; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
   
   .furniture_section .box:nth-child(3n) {
@@ -66,7 +66,7 @@
   }
   
   .furniture_section .box:hover .detail-box {
-    margin-top: 15px; /* Adjust as needed */
+    margin-top: 15px; 
   }
   .box.product {
     position: relative;
@@ -89,9 +89,14 @@
   .price_box a:hover {
     text-decoration: underline;
   }
+  .headingfurniture_container h2{
+   text-transform: uppercase; 
+  }
+  .headingfurniture_container{
+   margin-top: -250px;
+  }
   
-  
-  .product-added-message {
+.product-added-message {
     color: green;
   }
   @media screen and (max-width: 800px) {

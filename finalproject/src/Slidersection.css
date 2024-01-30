@@ -1,13 +1,13 @@
 /* slider section */
 .slider_section {
-    background-color: #f9fafa;
-    max-height: 1000px;
+    background-color:  #f7fafa;
     flex: 1;
     display: flex;
     align-items: center;
     position: relative;
     margin-left: 50px;
     margin-right: 50px;
+    height: 600px; 
   }
   
   h1,
@@ -26,9 +26,8 @@
     width: 100%;
     height: 650px;
   }
-  .slider_section #customCarousel {
-    width: 100%;
-  
+  .img-box{
+    width: 90%;
   }
   .detail-box-slider{
   
@@ -50,7 +49,10 @@
     text-align: center;
     width: 165px;
   }
-  
+  .slider_section .detail-box-slider h1{
+    text-transform: uppercase;
+    
+  }
   .slider_section .detail-box-slider .btn-box .btn1 {
     text-decoration: none;
     display: inline-block;
