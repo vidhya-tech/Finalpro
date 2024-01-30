@@ -41,10 +41,12 @@ li,a{
 .navlinks li:hover a {
   color: black;
 }
-
-  .resnav{
+.resnav{
     display: none;
-  }
+}
+.cart-notification {
+  color: red; /* Set text color to red */
+}
   
   @media screen and (max-width: 999px) {
     .resnav{
