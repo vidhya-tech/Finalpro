@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'; 
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import FurnitureSection from './FurnitureSection';
 import Aboutsection from './Aboutsection';
@@ -16,11 +17,11 @@ import { IoIosSearch } from "react-icons/io";
 
 import './Header.css'
 
-const Header = () => {
+const Header = ({cartItemCount}) => {
   return (
     <Router>
        <div>
-      <header>
+      <header className='navheading'>
           <span className='logo'>
             Edgecut
           </span>
@@ -31,9 +32,10 @@ const Header = () => {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
-            <li>
-              <Link to="/cart" className='shopcart'><CiShoppingCart  size="30px" /></Link>
-            </li>
+            <Link to="/cart" className='shopcart'>
+            <CiShoppingCart size="30px" />
+            {cartItemCount > 0 && <span className="cart-notification">{cartItemCount}</span>}
+          </Link>
           </ul>
         </nav>
     
@@ -87,5 +89,8 @@ const Header = () => {
     </Router>
   );
 };
+const mapStateToProps = (state) => ({
+  cartItemCount: state.cart.items.length, 
+});
 
-export default Header;
+export default connect(mapStateToProps)(Header);

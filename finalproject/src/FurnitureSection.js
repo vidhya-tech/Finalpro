@@ -42,6 +42,7 @@ const FurnitureSection = ({ addToCart }) => {
         </p>
       </div>
       {products.map((product) => (
+        
         <div className='box product' key={product.id}>
           <div className='image-box-fur'>
             <img src={product.image} alt={product.name} />

@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 300px;
+    margin-top: 200px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -10,11 +10,11 @@
   .furniture_section .box {
     width: 30%; 
     background-color: #f7fafa;
-    padding: 25px;
+    padding: 50px;
     border-radius: 5px;
     transition: 0.5s;
-    margin-bottom: 20px; 
-    box-sizing: border-box;
+   box-sizing: border-box;
+
   }
   
   .furniture_section .box:nth-child(3n) {
@@ -92,13 +92,16 @@
   .headingfurniture_container h2{
    text-transform: uppercase; 
   }
-  .headingfurniture_container{
-   margin-top: -250px;
+  .headingfurniture_container {
+    margin-top: -100px;
   }
+  
+  
   
 .product-added-message {
     color: green;
   }
+  
   @media screen and (max-width: 800px) {
     .furniture_section {
       margin-top: 150px; /* Adjust as needed for spacing on smaller screens */

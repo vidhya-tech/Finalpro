@@ -9,10 +9,10 @@ const Cart = ({ cartItems, incrementQuantity, decrementQuantity, removeFromCart 
 
   return (
     <div>
-      <h2>Cart</h2>
+      <h2  style={{ marginTop:'100px'}}>Cart </h2>
       {cartItems.map((item) => (
         <div key={item.id} style={{ display: 'flex', alignItems: 'center' }}>
-          <img className="furnimage"src={item.image }   alt={item.name} style={{ marginRight: '100px', width:'100ox' }} />
+          <img className="furnimage"src={item.image }   alt={item.name} style={{ marginRight: '100px', width:'200px', marginTop:'100px'}} />
           <div>
             <p>{item.name}</p>
             <p>Product: {item.productName}</p>
