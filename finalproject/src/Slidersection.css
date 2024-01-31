@@ -115,46 +115,38 @@
   
     
   }
-
-  @media screen and (max-width: 1564px) {
-    .slider_section .img-box img {
-      margin-top: 50px;
-      width: 100%;
-    }
-  
-    .slider_section .detail-box.img-box img {
-      margin-top: 40px;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
+/* Media query for phone screens */
+@media screen and (max-width: 375px) {
   .slider_section {
-    margin-left: 10px; /* Adjust margin for smaller screens */
-    margin-right: 10px; /* Adjust margin for smaller screens */
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto; 
+    margin-top: 50px;
   }
 
-  .slider_section .detail-box-slider .btn-box {
-    flex-direction: column;
-    margin: 0;
-    margin-top: 10px; /* Adjust margin for smaller screens */
+  .slider_section .img-box img {
+    width: 100%;
     margin-left: 0;
   }
 
-  .slider_section .detail-box-slider .btn-box a {
-    width: auto;
+  .slider_section .detail-box-slider {
+    margin-left: 0;
   }
 
-  .slider_section .detail-box-slider .btn-box .btn1,
-  .slider_section .detail-box-slider .btn-box .btn2 {
+  .slider_section .detail-box-slider .btn-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0; /* Add space between buttons */
+  }
+
+  .slider_section .detail-box-slider .btn-box a {
     width: 100%;
-    margin-bottom: 5px; /* Adjust margin for smaller screens */
+    margin: 5px 0; /* Add space between buttons */
   }
 
   .heading_container {
-    margin-top: 150px; /* Adjust margin for smaller screens */
+    margin-top: 100px; /* Adjust margin for smaller screens */
   }
 }
 
-  
-  /* slider section ends */
   
