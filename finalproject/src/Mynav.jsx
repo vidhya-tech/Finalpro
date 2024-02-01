@@ -32,10 +32,8 @@ function Mynav() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      
-      <Routes>
-        
+     <Routes>
+     
          
         
         

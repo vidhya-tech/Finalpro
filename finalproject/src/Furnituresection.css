@@ -91,6 +91,7 @@
   }
   .headingfurniture_container h2{
    text-transform: uppercase; 
+   text-align: justify;
   }
   .headingfurniture_container {
     margin-top: -100px;
@@ -108,7 +109,7 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-  
+    
     .furniture_section .box {
       width: 100%; /* Full width for each box on smaller screens */
       margin-right: 0; /* Reset margin for each box on smaller screens */
@@ -141,11 +142,14 @@
   }
   @media screen and (max-width: 480px) {
     .furniture_section {
-      margin-top: 100px;
+      margin-top: 150px;
       padding-left: 10px;
       padding-right: 10px;
+      width: 500px;
     }
-  
+    .headingfurniture_container h2{
+      text-align: justify;
+    }
     .furniture_section .box {
       width: 100%;
       margin-right: 0;
@@ -155,8 +159,9 @@
       height: 150px;
       padding: 15px;
       display: flex;
-      justify-content: center; /* Align horizontally in the center */
-      align-items: center; /* Align vertically in the center */
+      justify-content: center;
+      align-items: center; 
+      width: 100%;
     }
   
     .furniture_section .box .detail-box {
@@ -196,10 +201,17 @@
   
     .furniture_section .box:hover .image-box-fur img {
       transform: none;
-    }
+     }
   
     .furniture_section .box:hover .detail-box {
       margin-top: 0;
+
+    }
+    .furniture_section .box{
+       background-color:  #f7fafa;
+       max-width: 500px;
+       padding-left: 20px;
+      
     }
   }
   

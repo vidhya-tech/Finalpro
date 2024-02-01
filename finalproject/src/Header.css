@@ -43,6 +43,7 @@ li,a{
 }
 .resnav{
     display: none;
+  
 }
 .cart-notification {
   color: red;
@@ -51,6 +52,7 @@ li,a{
   @media screen and (max-width: 999px) {
     .resnav{
       display: block;
+      
     }
     .navlinks{
       display: none;
@@ -58,12 +60,7 @@ li,a{
     .logo{
       display: none;
     }
-    .resnav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
+    
    
   }
   
