@@ -4,66 +4,27 @@
   margin: 0;
   padding: 0;
 }
-.logo{
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-size: x-large;
-}
-li,a{
-  font-weight: 500;
-  font-size: 16px;
+.navbar {
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  z-index: 1000; 
   color: black;
-  text-decoration: none;
-}
-.navheading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #f7fafa;
-  z-index: 999;
-}
-
-.navlinks {
-  list-style: none;
-}
-.navlinks li {
-  display: inline-block;
-  padding: 0px 20px;
   text-transform: uppercase;
-}
-.navlinks li a {
-  transition: all 0.3s ease 0s;
-}
-.navlinks li:hover a {
-  color: black;
-}
-.resnav{
-    display: none;
   
+}
+.logo{
+  font-weight: 500;
+  font-size: large;
 }
 .cart-notification {
   color: red;
 }
+.navbar-nav .nav-link {
+  color: black;
+}
   
-  @media screen and (max-width: 999px) {
-    .resnav{
-      display: block;
-      
-    }
-    .navlinks{
-      display: none;
-    }
-    .logo{
-      display: none;
-    }
-    
-   
-  }
-  
+ 
   
 
 
