@@ -31,6 +31,9 @@
   .blog_section .box .detail-box {
     padding: 25px;
   }
+  .blog_section .img-box {
+    width: 111%;
+}
   
   .blog_section .box .detail-box h5 {
     font-weight: bold;
