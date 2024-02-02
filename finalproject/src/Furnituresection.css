@@ -102,7 +102,11 @@
 .product-added-message {
     color: green;
   }
-  
+  @media screen and (max-width: 991px){
+    .image-box-fur{
+      width: 200%;
+    }
+  }
   @media screen and (max-width: 800px) {
     .furniture_section {
       margin-top: 150px; /* Adjust as needed for spacing on smaller screens */
@@ -135,8 +139,8 @@
   }
   
   @media screen and (max-width:980px){
-    .image-box-fur{
-      width: 200px;
+    .furniture_section .box .image-box-fur img {
+      width: 100%;
     }
   
   }

@@ -25,7 +25,7 @@ const Header = ({ cartItemCount }) => {
           <Navbar.Brand className='logo' href="/">Edgecut</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto mx-auto"> {/* Apply mx-auto class for horizontal center alignment */}
+            <Nav className="me-auto mx-auto"> 
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/furniture">Furnitures</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>

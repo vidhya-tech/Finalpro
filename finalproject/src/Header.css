@@ -18,8 +18,14 @@
   font-size: large;
 }
 .cart-notification {
-  color: red;
+  
+
+  background-color:  #ff6348; 
+  border-radius: 100%;
+  color: aliceblue;
+  
 }
+
 .navbar-nav .nav-link {
   color: black;
 }

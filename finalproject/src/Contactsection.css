@@ -1,11 +1,11 @@
 /* contact  section */
 .contact_section {
     position: relative;
-    background-color: #f9fafa;;
-    margin-top: 200px;
+    background-color: #f9fafa;
     padding-left: 80px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: 100px
   }
   .form_container{
     margin-top: -250px;
@@ -23,7 +23,8 @@
   
   .contact_section .form_container input {
     width: 100%;
-    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
     height: 50px;
     margin-bottom: 25px;
     padding-left: 15px;
