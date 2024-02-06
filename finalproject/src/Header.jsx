@@ -20,29 +20,29 @@ const Header = ({ cartItemCount }) => {
   return (
     <Router>
       <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand className='logo' href={Link}>Edgecut</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto mx-auto"> 
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/furniture">Furnitures</Nav.Link>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
-              <Nav.Link as={Link} to="/cart" className="shopcart">
-                <CiShoppingCart size="30px" />
-                {cartItemCount > 0 && <span className="cart-notification">{cartItemCount}</span>}
-              </Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link as={Link} to="/login" className="login">LOGIN <i className="fa-solid fa-user"></i></Nav.Link>
-              <Nav.Link><IoIosSearch className="searchicon" size="20px" /></Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+        <Navbar expand="lg" className="bg-body-tertiary">
+          <Container>
+            <Navbar.Brand className='logo'>Edgecut</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto mx-auto"> 
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="/furniture">Furnitures</Nav.Link>
+                <Nav.Link as={Link} to="/about">About</Nav.Link>
+                <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                <Nav.Link as={Link} to="/cart" className="shopcart">
+                  <CiShoppingCart size="30px" />
+                  {cartItemCount > 0 && <span className="cart-notification">{cartItemCount}</span>}
+                </Nav.Link>
+              </Nav>
+              <Nav>
+                <Nav.Link as={Link} to="/login" className="login">LOGIN <i className="fa-solid fa-user"></i></Nav.Link>
+                <Nav.Link><IoIosSearch className="searchicon" size="20px" /></Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </div>
 
       <Routes>
@@ -61,35 +61,10 @@ const Header = ({ cartItemCount }) => {
             </>
           }
         />
-        <Route path="/furniture" element={
-        <>
-        <FurnitureSection />
-        <Footersection/>
-        </>
-      
-      } />
-        <Route path="/about" element={
-        <>
-        <Aboutsection />
-        <Footersection/>
-        </>
-      } />
-        <Route path="/blog" element={
-          <>
-            <Blog />
-            <ClientSection />
-            <Footersection/>
-          </>
-        } />
-        <Route
-          path="/contact"
-          element={
-            <>
-              <Contactus />
-              <Yearsection />
-            </>
-          }
-        />
+        <Route path="/furniture" element={<FurnitureSection />} />
+        <Route path="/about" element={<Aboutsection />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contactus />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
       </Routes>
