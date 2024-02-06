@@ -7,7 +7,8 @@ import f3 from './image/f3.png';
 import f4 from './image/f4.png';
 import f5 from './image/f5.png';
 import f6 from './image/f6.png';
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { Link, useNavigate } from 'react-router-dom';
+
 import './Furnituresection.css';
 
 const FurnitureSection = ({ addToCart }) => {
@@ -23,7 +24,7 @@ const FurnitureSection = ({ addToCart }) => {
     }, 2000);
 
     // Redirect to cart page after adding to cart
-    navigate('/art'); // Assuming your cart page is at '/cart'
+    navigate('/Cart', { state: { addedProduct: item } });
   };
 
   const products = [
@@ -50,7 +51,16 @@ const FurnitureSection = ({ addToCart }) => {
             <h5>{product.name}</h5>
             <div className='price_box'>
               <div className='price_heading'>${product.price.toFixed(2)}</div>
-              <Link className="add-to-cart-link" onClick={() => handleAddToCart(product)}>Add to Cart</Link>
+              <Link
+                className="add-to-cart-link"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default behavior of the link
+                  handleAddToCart(product); // Call handleAddToCart function
+                }}
+              >
+                Add to Cart
+              </Link>
+
             </div>
           </div>
           {addedProduct && addedProduct.id === product.id && (

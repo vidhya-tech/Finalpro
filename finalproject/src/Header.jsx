@@ -18,11 +18,11 @@ import './Header.css';
 
 const Header = ({ cartItemCount }) => {
   return (
-    <Router>
+    <Router basename="/Finalpro">
       <div>
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand className='logo'>Edgecut</Navbar.Brand>
+            <Navbar.Brand className='logo' href={Link}>Edgecut</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto mx-auto"> 
