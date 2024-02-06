@@ -18,13 +18,18 @@
   font-size: large;
 }
 .cart-notification {
-  
-
-  background-color:  #ff6348; 
-  border-radius: 100%;
+  background-color: #ff6348;
+  border-radius: 50%; 
   color: aliceblue;
-  
+  width: 20px; 
+  height: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: -40px;
 }
+
 
 .navbar-nav .nav-link {
   color: black;
