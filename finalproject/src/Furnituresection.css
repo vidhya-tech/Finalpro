@@ -133,8 +133,8 @@
     }
   
     .price_box a {
-      text-align: left; /* Adjust text alignment for smaller screens */
-      margin-top: 15px; /* Adjust margin for smaller screens */
+      text-align: left; 
+      margin-top: 15px; 
     }
   }
   
