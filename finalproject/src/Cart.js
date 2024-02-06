@@ -1,6 +1,9 @@
+// Cart.js
+
 import React from 'react';
 import { connect } from 'react-redux';
 import { incrementQuantity, decrementQuantity, removeFromCart } from './cartSlice';
+import './Cart.css';
 
 const Cart = ({ cartItems, incrementQuantity, decrementQuantity, removeFromCart }) => {
   const calculateTotal = () => {
@@ -8,23 +11,25 @@ const Cart = ({ cartItems, incrementQuantity, decrementQuantity, removeFromCart 
   };
 
   return (
-    <div>
-      <h2  style={{ marginTop:'100px'}}>Cart </h2>
+    <div className="cart-container"> {/* Add cart-container class */}
+      <h2>Cart</h2>
       {cartItems.map((item) => (
-        <div key={item.id} style={{ display: 'flex', alignItems: 'center' }}>
-          <img className="furnimage"src={item.image }   alt={item.name} style={{ marginRight: '100px', width:'200px', marginTop:'100px'}} />
-          <div>
+        <div key={item.id} className="cart-item"> {/* Add cart-item class */}
+          <img className="furnimage" src={item.image} alt={item.name} />
+          <div className="item-details">
             <p>{item.name}</p>
             <p>Product: {item.productName}</p>
             <p>${item.price}</p>
             <p>Quantity: {item.quantity}</p>
-            <button onClick={() => incrementQuantity(item)}>Increment</button>
-            <button onClick={() => decrementQuantity(item)}>Decrement</button>
-            <button onClick={() => removeFromCart(item)}>Remove</button>
+            <div>
+              <button onClick={() => incrementQuantity(item)}>Increment</button>
+              <button onClick={() => decrementQuantity(item)}>Decrement</button>
+              <button onClick={() => removeFromCart(item)}>Remove</button>
+            </div>
           </div>
         </div>
       ))}
-      <p>Total: ${calculateTotal()}</p>
+      <p className="total">Total: ${calculateTotal()}</p> {/* Add total class */}
     </div>
   );
 };

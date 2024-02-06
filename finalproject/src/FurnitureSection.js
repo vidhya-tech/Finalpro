@@ -7,21 +7,25 @@ import f3 from './image/f3.png';
 import f4 from './image/f4.png';
 import f5 from './image/f5.png';
 import f6 from './image/f6.png';
-import { Link } from 'react-router-dom';
-import './Furnituresection.css'
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import './Furnituresection.css';
+
 const FurnitureSection = ({ addToCart }) => {
   const [addedProduct, setAddedProduct] = useState(null);
+  const navigate = useNavigate(); // Access navigate function
 
   const handleAddToCart = (item) => {
     addToCart(item);
     setAddedProduct(item);
-    // Reset the message after a short delay
+
     setTimeout(() => {
       setAddedProduct(null);
     }, 2000);
+
+    // Redirect to cart page after adding to cart
+    navigate('/art'); // Assuming your cart page is at '/cart'
   };
 
-  // Define your product data
   const products = [
     { id: 1, name: 'Brown Chair Design', price: 100, image: f1 },
     { id: 2, name: 'Double Bed Design', price: 200, image: f2 },
@@ -33,16 +37,11 @@ const FurnitureSection = ({ addToCart }) => {
 
   return (
     <div className="furniture_section">
-     <div class="headingfurniture_container">
-        <h2>
-          Our Furniture
-        </h2>
-        <p>
-          which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an
-        </p>
+      <div class="headingfurniture_container">
+        <h2>Our Furniture</h2>
+        <p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an</p>
       </div>
       {products.map((product) => (
-        
         <div className='box product' key={product.id}>
           <div className='image-box-fur'>
             <img src={product.image} alt={product.name} />

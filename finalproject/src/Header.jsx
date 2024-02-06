@@ -22,7 +22,7 @@ const Header = ({ cartItemCount }) => {
       <div>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand className='logo' href="/">Edgecut</Navbar.Brand>
+          <Navbar.Brand className='logo' href={Link}>Edgecut</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto mx-auto"> 
@@ -61,12 +61,24 @@ const Header = ({ cartItemCount }) => {
             </>
           }
         />
-        <Route path="/furniture" element={<FurnitureSection />} />
-        <Route path="/about" element={<Aboutsection />} />
+        <Route path="/furniture" element={
+        <>
+        <FurnitureSection />
+        <Footersection/>
+        </>
+      
+      } />
+        <Route path="/about" element={
+        <>
+        <Aboutsection />
+        <Footersection/>
+        </>
+      } />
         <Route path="/blog" element={
           <>
             <Blog />
             <ClientSection />
+            <Footersection/>
           </>
         } />
         <Route
