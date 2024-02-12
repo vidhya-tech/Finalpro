@@ -32,7 +32,7 @@ const FurnitureSection = ({ addToCart }) => {
     { id: 2, name: 'Double Bed Design', price: 200, image: f2 },
     { id: 3, name: 'House Chair Design', price: 200, image: f3 },
     { id: 4, name: 'Brown Table Design', price: 100, image: f4 },
-    { id: 5, name: 'Blue Chair Design', price: 200, image: f5 },
+    { id: 5, name: 'Blue Chair Design', price: 200, image: f5 }, 
     { id: 6, name: 'Brown Table Design', price: 200, image: f6 },
   ];
 
