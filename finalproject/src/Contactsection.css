@@ -55,7 +55,50 @@
   
   .contact_section .form_container button:hover {
     background-color: transparent;
-    color: #6bb7be;
+    color: #0f7079;
   }
   /* End contact section */
+  /* CSS for phones (up to 768 pixels) */
+@media only screen and (max-width: 768px) {
+  /* contact section */
+  .contact_section {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px; /* Adjusted margin top for phones */
+  }
   
+  .form_container {
+    margin-top: -150px; /* Adjusted margin top for phones */
+  }
+  
+  .contact_section .heading_container {
+    margin-bottom: 15px; /* Adjusted margin bottom for phones */
+  }
+  
+  .contact_section .heading_container h2 {
+    font-size: 24px; /* Adjusted font size for phones */
+    font-weight: bold; /* Adjusted font weight for phones */
+  }
+  
+  .contact_section .form_container input {
+    height: 40px; /* Adjusted input height for phones */
+    margin-bottom: 15px; /* Adjusted margin bottom for phones */
+    padding-left: 10px; /* Adjusted padding left for phones */
+  }
+  
+  .contact_section .form_container input.message-box {
+    height: 80px; /* Adjusted message box height for phones */
+  }
+  
+  .contact_section .form_container button {
+    padding: 10px 35px; /* Adjusted padding for phones */
+    font-size: 14px; /* Adjusted font size for phones */
+  }
+  
+  .contact_section .form_container button:hover {
+    background-color: #6bb7be; /* Reset background color on hover for phones */
+    color: #ffffff; /* Reset text color on hover for phones */
+  }
+  /* End contact section */
+}
